@@ -1,0 +1,103 @@
+—————————————————————————————————————————————
+    > Syntax for C--
+—————————————————————————————————————————————
+
+ — Data Types
+    • int     ->  whole
+    • float   ->  decimal
+    • double  ->  big_decimal
+    • string  ->  thread
+    • char    ->  letter
+
+— Formatting
+    • std::cout<<std::endl; OR std::cout<<"\n";
+        -> newline();
+        -> newline(#);
+            -> # - select how many newlines to output
+
+    • std::cout<<"\t";
+        -> indent();
+        
+    • getchar();
+        -> catchE();
+
+    • std::cout<<"--  --  --  --  --  --  --  --  --  --  --  --  --  --"<<std::endl;
+        -> f_dash();
+
+    • std::cout<<"--  --  --  --  --  --  --"<<std::endl;
+        -> f_s_dash();
+  
+— Take in User Input
+    • std::cin>>var;
+        -> var = readin<type>();
+    
+    • getline(std::cin, var);
+        -> var = readline();
+        -> readline(var);
+
+- Converted functions
+    •if()
+        ->ifit()
+
+
+- Some ctrl+c, ctrl+v functions to try 😉
+    ↪ Ask and add two numbers
+    ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+        whole num1, num2, sum;
+
+        showme("Enter two numbers to add: ");
+            num1 = readin<whole>(); num2 = readin<whole>();
+                sum = num1 + num2;
+
+        showme("These add up to ", sum);
+    ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+    ↪ Ask for numbers and a operator to do math
+    ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+        whole num1, num2, sum;
+        letter op;
+
+        showme("Enter two integers with a operator in the middle to calulate: ");
+            num1 = readin<whole>(); op = readin<letter>(); num2 = readin<whole>();
+
+        ifit(op == '-')
+            sum = num1 - num2;
+        elif(op == '+')
+            sum = num1 + num2;
+        elif(op == '*')
+            sum = num1 * num2;
+        elif(op == '/')
+            sum = num1 / num2;
+
+        showme("You got ", sum);
+    ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+    ↪ Structure to ask for Input
+    ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+        thread custName;
+        whole scoops;
+
+        showme("Welcome to Papa's Freezeria!"); 
+            newline();
+                f_s_dash();
+
+        showme("Enter a name for your order: "); readline(custName);
+        showme("Select how many scoops you would like. 3 or more scoops is a bowl.");
+            newline();
+                showme("->"); scoops = readin<whole>();
+
+        showme("Thank You! ", custName, ", you ordered ", scoops, " scoops.");
+            newline();
+    ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+    ↪ Load all allocated memory
+    ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+        showme("Loaded all memory and their address:");
+            newline();
+        showme("Key | Value");
+            newline();
+        
+        manageMem.load();
+    ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+    
+        
