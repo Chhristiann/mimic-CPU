@@ -1,15 +1,15 @@
-————————————————————<br>
+————————————————————
 
 ###### Included Files:<br>
     finalProject.cpp
     instructions.txt
 
 ————————————————————<br>
-Author: Christian Chacon
+Author: Christian Chacon<br>
 Date: Jun 22, 2023
 
 Henry Ford College - CIS 230 01
-————————————————————<br>
+<br>————————————————————<br>
 # Project Summary:
     This project combines a class which acts like a CPU and all of its functionalities
     and my own namespace called 'cminusminus'/C-- which provides classes and functions
