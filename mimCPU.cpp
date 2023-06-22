@@ -311,5 +311,8 @@ using namespace cminusminus;
 
 int main(){
 
+    //  use instructions to create your own program or
+    //  use the mini pre-create ones at the bottom of 
+    //  instructions
     return 0;
 }
